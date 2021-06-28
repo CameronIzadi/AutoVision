@@ -1,0 +1,143 @@
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 60px;
+  min-width: 60px;
+  max-height: auto;
+}
+
+
+body {
+  background-color: rgb(14, 157, 71);
+  text-align: center;
+  flex-direction: column;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+.github {
+  float: right;
+  max-width: 40px;
+  min-width: 40px;
+  max-height: auto;
+  padding: 10px 5px 10px 5px;
+}
+
+.github:hover {
+  opacity: 40%;
+}
+
+.top-bar {
+  background-color: blue;
+  line-height: 10px;
+}
+
+
+.hvr-pulse {
+  float: left; 
+  font-weight: bold;
+  color: rgb(14, 218, 204)
+}
+
+input {
+  padding: 7px;
+  border-radius: 15px;
+  border-radius: 20%;
+  margin:3px;
+}
+
+ .car-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgb(162, 149, 98);
+
+} 
+
+button {
+  background-color: rgb(99, 94, 94);
+  color: gold;
+}
+
+button:hover {
+  opacity: 75%;
+}
+.search-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.inside{
+  max-width: 150px;
+  min-width: 150px;
+  max-height: 200px;
+  min-height: 200px;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .car-list {
+    width: 100%;
+    display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .hvr-pulse{
+   width: 20%;
+   font-size: large;
+   margin: auto;
+  }
+}
+
+/* Found Cool pulse animation here: https://github.com/IanLunn/Hover 
+*/
+@-webkit-keyframes hvr-pulse { 
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+@keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+.hvr-pulse {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-pulse:hover, .hvr-pulse:focus, .hvr-pulse:active {
+  -webkit-animation-name: hvr-pulse;
+  animation-name: hvr-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
